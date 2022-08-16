@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<title>
+Remedies
+</title>
+<style>
+.a1.link, .a1:visited{
+background-color: white;
+  color: #144D01;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.a1{
+   margin-left:50px;
+   margin-top:40px
+}
+.a1:hover, .a1:active {
+  background-color: #9FCB90;
+}
+a:link, a:visited {
+  background-color: #029513;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #135A00;
+}
+.header{
+height:20%;
+width:100%;
+background-image: url("{{url_for('static', filename='header.png')}}");
+}
+p{
+padding-left:200px;
+}
+
+</style>
+</head>
+
+<body style = "Background-image: url('{{url_for('static', filename='bg.jpg')}}");'>
+
+<div class = "header">
+<a class = "a1" href ="http://localhost:5000/Selection">HomePage</a>
+<p style = "margin-top:-60px;
+padding-left : 500px;
+font-size : 70px;
+font-family: 'Brush Script MT', cursive;color:white;">#ItsTimeForResults</p>
+</div>
+
+<div >
+<p style = "font-size:30px;font-style:Trattatello, fantasy;font-weight:800">The plant is suffering from disease that belongs to the class:</P>
+<p style = "font-size:30px;font-style:Trattatello, fantasy;font-weight:700">
+{{result}}</p>
+<p style = "font-size:30px;font-style:Trattatello, fantasy;font-weight:800">What is Bacteria?</p>
+<p style = "font-size:23px;font-style:Trattatello, fantasy;font-weight:500">Bacteria are extremely small organism, ever-present in practically every environment on planet earth.
+ Measuring only a few micrometers, they can prove to have grave consequences to the infected, be it plant or animal. 
+They can be found in soil, water, any organic material and even in radioactive waste.
+<br>
+<p style = "font-size:23px;font-style:Trattatello, fantasy;font-weight:500">Bacterial diseases in plants can be extremely damaging. 
+Some plant diseases caused by bacteria can rapidly kill your plant, others will cause it to gradually pine away. 
+Usually, diseases caused by bacteria in plants are not destructive to the plant as it cannot enter the stems or foliage of the plant; however it will penetrate through artificial or natural openings or wounds.
+
+<p style = "font-size:23px;font-style:Trattatello, fantasy;font-weight:500">
+The three most prevalent plant diseases caused by bacteria are Crown Gall, Bacterial Leaf Spot and Fire Blight</p><br>
+
+<p style = "font-size:30px;font-style:Trattatello, fantasy;font-weight:700">Get remedies and apply them to your effected plant to save the plant.<br><br>
+<a href = "http://localhost:5000/BacteriaRemedies" >Get Remedies</a>
+</p>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>
+Remedies
+</title>
+<style>
+.a1.link, .a1:visited{
+background-color: white;
+  color: #144D01;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.a1{
+   margin-left:50px;
+   margin-top:40px
+}
+.a1:hover, .a1:active {
+  background-color: #9FCB90;
+}
+a:link, a:visited {
+  background-color: #135A00;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #029513;
+}
+.header{
+height:20%;
+width:100%;
+background-image: url("{{url_for('static', filename='header.png')}}");
+
+}
+p{
+padding-left:200px;
+}
+
+</style>
+</head>
+
+<body style = "background-image: url('{{url_for('static', filename='bg.jpg')}}");'>
+
+<div class="header">
+<a class = "a1" href ="http://localhost:5000/Selection">HomePage</a>
+<p style = "margin-top:-60px;
+padding-left : 600px;
+font-size : 70px;
+font-family: 'Brush Script MT', cursive;color:white;">#Remedies</p>
+</div>
+
+
+<div >
+
+<p style = "font-size:30px;font-style:Trattatello, fantasy;font-weight:800">Remedies for Lateblight Disease:</P>
+<p style = "font-size:20px;font-style:Trattatello, fantasy;font-weight:700">
+<br>Monitor the field, remove and destroy infected leaves<br>
+<br>Treat organically with copper spray. <br>
+<br>Fungicides that contain maneb, mancozeb, chlorothanolil, or fixed copper.<br><br>
+<a href = "https://www.planetnatural.com/pest-problem-solver/plant-disease/late-blight/" >More Details</a>
+</p>
+
+
+
+</body>
+</html>
+
+

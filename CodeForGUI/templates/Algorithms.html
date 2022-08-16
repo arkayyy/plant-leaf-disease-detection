@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<title>
+Remedies
+</title>
+<style>
+
+a:link, a:visited {
+  background-color: #029513;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.a1.link, .a1:visited{
+background-color: white;
+  color: #144D01;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: #135A00;
+}
+.a1{
+   margin-left:50px;
+   margin-top:40px
+}
+.a1:hover, .a1:active {
+  background-color: #9FCB90;
+}
+.header{
+height:20%;
+width:100%;
+background-image: url("{{url_for('static', filename='header.png')}}");
+}
+p{
+padding-left:200px;
+}
+
+</style>
+</head>
+
+<body style = "Background-image: url('{{url_for('static', filename='bg.jpg')}}");'>
+
+<div class = "header">
+<a class = "a1" href ="http://localhost:5000/Selection">HomePage</a>
+<p style = "margin-top:-60px;
+padding-left : 600px;
+font-size : 75px;
+font-family: 'Brush Script MT', cursive;color:white;">#Algorithms</p>
+</div>
+
+<div >
+<p style = "font-size:30px;font-style:Trattatello, fantasy;font-weight:800">Convolution Neural Networks</P>
+<p style = "font-size:20px;font-style:Trattatello, fantasy;font-weight:700">
+<br>A Convolutional Neural Network (ConvNet/CNN) is a Deep Learning algorithm which can take in an input image, assign importance <br>
+<br>(learnable weights and biases) to various aspects/objects in the image and be able to differentiate one from the other.<br>
+<br>The pre-processing required in a ConvNet is much lower as compared to other classification algorithms.<br>
+<br>While in primitive methods filters are hand-engineered, with enough training, ConvNets have the ability to learn these filters/characteristics. <br><br>
+<img src = "{{url_for('static', filename='CNN.jpeg')}}" style = "height:300px; width:900px;">
+<br><br>
+<a href = "https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53" >More Details</a>
+</p>
+
+<p style = "font-size:30px;font-style:Trattatello, fantasy;font-weight:800">Support Vector Machine</P>
+<p style = "font-size:20px;font-style:Trattatello, fantasy;font-weight:700">
+<br>Support Vector Machine is a supervised classification algorithm where we draw a line between two different categories to differentiate between them. <br>
+<br>SVM is also known as the support vector network.<br>
+<br>It can also be used for regression problems. <br>
+<br>There are many cases where the differentiation is not so simple as shown below. In that case, the hyperplane dimension needs to be changed from<br>
+<br> 1 dimension to the Nth dimension. This is called Kernel. <br><br>
+<img src = "{{url_for('static', filename='SVM.png')}}" style = "height:300px; width:500px;"><br>
+<br>We can have three types of kernels.
+Linear Kernels, 
+Polynomial Kernels, 
+Radial Basis Function Kernel<br><br>
+<a href = "https://towardsdatascience.com/svm-support-vector-machine-for-classification-710a009f6873" >More Details</a>
+</p>
+
+<p style = "font-size:30px;font-style:Trattatello, fantasy;font-weight:800">VGG</P>
+<p style = "font-size:20px;font-style:Trattatello, fantasy;font-weight:700">
+<br>VGG models are a type of CNN Architecture proposed by Karen Simonyan & Andrew Zisserman of Visual Geometry Group (VGG), Oxford University, <br>
+<br>which brought remarkable results for the ImageNet Challenge.<br>
+<br>They experiment with 6 models, with different numbers of trainable layers. Based on the number of models the two most popular models are VGG16 and VGG19. <br>
+<br>These are models, which are networks with a large number of parameters ( A Case in point is VGG16, which has 138 Million Parameters).<br><br>
+<img src = "{{url_for('static', filename='VGG.png')}}" style = "height:400px; width:1000px;"><br><br>
+<a href = "https://towardsdatascience.com/how-to-use-a-pre-trained-model-vgg-for-image-classification-8dd7c4a4a517" >More Details</a>
+</p>
+
+
+
+</body>
+</html>
+
+
